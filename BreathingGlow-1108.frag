@@ -139,8 +139,8 @@ void main() {
     vec3 color = vec3(0.245,0.087,0.137);
     
     vec2 mouse=u_mouse/u_resolution.xy;
-    mouse.x*= u_resolution.x/u_resolution.y;
     mouse=mouse*2.0-1.0;
+    mouse.x*= u_resolution.x/u_resolution.y;
     
     float interact=1.-mouseEffect(uv,mouse,0.08);
     
