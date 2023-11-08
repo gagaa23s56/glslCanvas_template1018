@@ -138,7 +138,7 @@ void main() {
     // uv*= rotate2d(random(ipos)*PI+u_time*0.5);
     vec3 color = vec3(0.245,0.087,0.137);
     
-    vec2 mouse=u_mouse/u_resolution.xy;
+    vec2 mouse=u_mouse.xy/u_resolution.xy;
     mouse=mouse*2.0-1.0;
     mouse.x*= u_resolution.x/u_resolution.y;
     
